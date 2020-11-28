@@ -146,11 +146,11 @@ public class MyServlet extends HttpServlet {
 		//***************错误注入（true和false交换）********************
 		try {
 			if(tempFile.exists())
-				return true;
+				return false;
 		}catch (Exception e) {
 			e.printStackTrace();
 		}
-		return false;
+		return true;
 	}
 	
 	public MyPicture stoPicture(File picfile) throws Exception {
